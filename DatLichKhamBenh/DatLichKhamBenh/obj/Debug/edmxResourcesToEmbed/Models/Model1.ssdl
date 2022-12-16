@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebDatLichKhamBenhModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CHUCVU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="CHUCVU" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="danhsachbacsi">
+    <Key>
+      <PropertyRef Name="mabacsi" />
+    </Key>
+    <Property Name="mabacsi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="hovaten" Type="nvarchar" MaxLength="50" />
+    <Property Name="chucvu" Type="nvarchar" MaxLength="50" />
+    <Property Name="sdt" Type="nvarchar" MaxLength="50" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="cmnd" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="datlichhen">
+    <Key>
+      <PropertyRef Name="maKhamBenh" />
+    </Key>
+    <Property Name="maKhamBenh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="hoVaTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="sdt" Type="nvarchar" MaxLength="50" />
+    <Property Name="ngayThangNamSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="gioiTinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="ngayHen" Type="nvarchar" MaxLength="50" />
+    <Property Name="noiDung" Type="nvarchar" MaxLength="50" />
+    <Property Name="trangThai" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ICON" Type="text" />
+    <Property Name="LINK" Type="text" />
+    <Property Name="NAMECONTROLLER" Type="text" />
+    <Property Name="IDPARENT" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="PHANQUYEN">
+    <Key>
+      <PropertyRef Name="IDCHUCVU" />
+      <PropertyRef Name="IDMENU" />
+    </Key>
+    <Property Name="IDCHUCVU" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="IDMENU" Type="varchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAIKHOAN">
+    <Key>
+      <PropertyRef Name="IDTAIKHOAN" />
+    </Key>
+    <Property Name="HOTEN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NGAYSINH" Type="datetime" />
+    <Property Name="GIOITINH" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="SODT" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MATKHAU" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IDTAIKHOAN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDCHUCVU" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="WebDatLichKhamBenhModel2StoreContainer">
+    <EntitySet Name="CHUCVU" EntityType="Self.CHUCVU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="danhsachbacsi" EntityType="Self.danhsachbacsi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="datlichhen" EntityType="Self.datlichhen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MENU" EntityType="Self.MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHANQUYEN" EntityType="Self.PHANQUYEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

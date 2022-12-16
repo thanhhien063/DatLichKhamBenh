@@ -1,0 +1,62 @@
+﻿<!-- Header
+    ============================================= -->
+<header id="header" class="navbar-fixed-top">
+    <div id="header-wrap">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Logo ============================================= -->
+                        <div id="logo">
+                            <a href="/TrangChu" class="medihere-logo"><img src=@Url.Content("/Content/images/logo_healthcare3.png") alt="medihere Logo" title="medihere"></a>
+                        </div>
+                        <!-- #logo end -->
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- unordered list starts here -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="Active">@Html.ActionLink("TRANG CHỦ", "Index", "TrangChu")</li>
+                            <li>@Html.ActionLink("GIỚI THIỆU", "GioiThieu", "GioiThieu")</li>
+                            <li>@Html.ActionLink("DỊCH VỤ", "DichVu", "DichVu")</li>
+                            <li>@Html.ActionLink("ĐẶT LỊCH KHÁM", "DatLichKham", "DatLichKham")</li>                            
+                            <li>@Html.ActionLink("LIÊN HỆ", "LienHe", "LienHe")</li>
+                            <li>@Html.ActionLink("QUẢN TRỊ", "Login/Login", "Admin")</li>
+                            <li>@Html.ActionLink("ĐĂNG NHẬP", "LoginPatient", "LoginPatient")</li>
+                            <!-- Modal HTML embedded directly into document -->
+                            <li>@Html.ActionLink("ĐĂNG KÝ", "RegisterPatient", "RegisterPatient")</li>
+
+                        </ul>
+                    </div>
+                    @*<div class="container">                
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Đăng nhập</button>
+                        <div id="demo" class="collapse">
+                            <form action="" class="login_form modal" id="ex2" style="display: inline-block;">
+                                <h3>Vui lòng đăng nhập để tiếp tục</h3>
+                                <p><label>Email</label><input type="text"></p>
+                                <p><label>Mật khẩu</label><input type="password"></p>
+                                <p><input type="submit" value="Đăng nhập"></p>
+                                <a href="#close-modal" rel="modal:close" class="close-modal ">Đóng</a>
+                            </form>
+                        </div>
+                    </div>*@
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<!-- #header end -->

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HEALTH_CAREModelStoreContainer" CdmEntityContainer="HEALTH_CAREEntities">
+    <EntitySetMapping Name="menus">
+      <EntityTypeMapping TypeName="HEALTH_CAREModel.menu">
+        <MappingFragment StoreEntitySet="menu">
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="nameMenu" ColumnName="nameMenu" />
+          <ScalarProperty Name="linkMenu" ColumnName="linkMenu" />
+          <ScalarProperty Name="titleMenu" ColumnName="titleMenu" />
+          <ScalarProperty Name="newPageMenu" ColumnName="newPageMenu" />
+          <ScalarProperty Name="isParent" ColumnName="isParent" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="orders" ColumnName="orders" />
+          <ScalarProperty Name="isPublished" ColumnName="isPublished" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

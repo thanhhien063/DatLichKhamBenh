@@ -1,0 +1,17 @@
+﻿@using DatLichKhamBenh.Models;
+@model List<MENU>
+@foreach (var item in Model)
+{
+    <li>
+
+        <a href="@Url.Action(item.LINK, item.NAMECONTROLLER )"><i class="@item.ICON"></i> @item.NAME <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                @Html.Action("LoadMenuCon", "Menu", new { IDMenuCha = @item.ID })
+            </li>
+
+        </ul>
+        <!-- /.nav-second-level -->
+
+    </li>
+}

@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Medical Template">
+    <meta name="keywords" content="Medical, medihere, Doctor, HTML5, Bootstrap, Popular, custom, clinic, health-care, template, theme" />
+    <meta name="author" content="Mostafiz">
+    <!-- Favicon -->
+    <link rel="icon" href=@Url.Content("/Content/images/favicon.ico")>
+    <title>Medihere - Responsive Bootstrap &amp; HTML Medical Template</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/font-awesome.min.css")>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/bootstrap.min.css")>
+    <!-- preloader css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/introLoader.min.css")>
+    <!-- animate css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/animate.css") type="text/css" />
+    <!-- owl carousel styles -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/owl.carousel.css") type="text/css" />
+    <!-- date picker css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/datepicker.css")>
+    <!-- main style -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/style.css")>
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+    <!-- modernizr -->
+    <script src=@Url.Content("/Content/js/modernizr.js")></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Document Wrapper
+    ============================================= -->
+    <main id="wrapper">
+        <!-- // Preloader markup -->
+        <div id="element" class="introLoading"></div>
+        @Html.Partial("_Header")
+        <!--  slider section-->
+        <section class="slider" id="slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src=@Url.Content("/Content/images/slide.jpg") alt="#" />
+                        <div class="carousel-caption">
+                            <h1 class="animated rotateInUpRight">Chào bạn đến với trung tâm HealthCareVN</h1>
+                            <p class="animated bounceInDown"></p>
+                            <a class="animated tada" href="#">xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src=@Url.Content("/Content/images/slide1.jpg") alt="#" />
+                        <div class="carousel-caption">
+                            <h1 class="animated bounceInLeft">Chúng tôi quan tâm đến bạn</h1>
+                            <p class="animated bounceInRight"> </p>
+                            <a class="animated bounceInUp" href="#">xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src=@Url.Content("/Content/images/slide2.jpg") alt="#" />
+                        <div class="carousel-caption">
+                            <h1 class="animated lightSpeedIn">Chúng tôi có những dịch vụ tốt</h1>
+                            <p class="animated slideInDown"></p>
+                            <a class="animated rotateIn" href="#">xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src=@Url.Content("/Content/images/slide3.jpg") alt="#" />
+                        <div class="carousel-caption">
+                            <h1 class="animated zoomIn">Sức khỏe là quan trọng</h1>
+                            <p class="animated rollIn"></p>
+                            <a class="animated zoomInUp" href="#">xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" area-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" area-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- slider ends -->
+        <!-- appointment section -->
+        <!-- appointment seciton ends -->
+        <!-- our services -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Dịch Vụ</h2>
+                        <p> </p>
+                        <div class="row">
+                            <div class="col-md-12 single-services">
+                                <!-- service 1 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-1">
+                                        <span></span>
+                                        <h3>Tim mạch</h3>
+                                        <p>
+                                            Khám, điều trị và tư vấn chuyên sâu các bệnh về Tim mạch
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- service 2 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-2">
+                                        <span></span>
+                                        <h3>Nha khoa</h3>
+                                        <p>Áp dụng những công nghệ, kỹ thuật mới nhất trong chắm sóc răng miệng</p>
+                                    </div>
+                                </div>
+                                <!-- service 3 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-3">
+                                        <span></span>
+                                        <h3>Tai mũi họng</h3>
+                                        <p>
+                                           Do các bác sĩ chuyên khoa tai mũi họng trực tếp khám bệnh
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- service 4 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-4">
+                                        <span></span>
+                                        <h3>Chăm sóc khẩn cấp</h3>
+                                        <p>Kịp thời tiếp cận và cứu chữa cho bệnh nhân</p>
+                                    </div>
+                                </div>
+                                <!-- service 5 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-5">
+                                        <span></span>
+                                        <h3>Nội khoa</h3>
+                                        <p>Các chuyên gia đầu ngành về Nội Hô hấp trực tiếp thăm khám và điều trị</p>
+                                    </div>
+                                </div>
+                                <!-- service 6 -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-service service-6">
+                                        <span></span>
+                                        <h3>Kiểm tra ADN </h3>
+                                        <p>Công nghệ phân tích và các trang thiết bị được nhập khẩu trực tiếp từ hãng uy tín nhất của Mỹ như Illumina, AppliedBiosystems, Qiagen, Sigma…</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-tb">
+                        <img src=@Url.Content("/Content/images/service.jpg") alt="medihere Services" class="img-responsive" title="Our Services Images">
+                        <h3>vì sao đặt lịch khám với HealthCareVN</h3>
+                        <div class="panel-group" id="general-questions">
+                            <div class="panel faq-panel">
+                                <div class="faq-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#general-questions" href="#gf1" aria-expanded="false">
+                                            Đội ngũ bác sĩ giàu kinh nghiệm <i class="indicator glyphicon  pull-right glyphicon-plus"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="gf1" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;">
+                                    <div class="panel-body">
+                                        Các giáo sư, bác sĩ chuyên khoa uy tín đầu ngành, kinh nghiệm công tác lâu năm tại các bệnh viện lớn ở Việt Nam.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel faq-panel">
+                                <div class="faq-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#general-questions" href="#gf2" aria-expanded="false">
+                                            Đúng người, đúng bệnh <i class="indicator glyphicon pull-right glyphicon-plus"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="gf2" role="tablist" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        Thông qua hệ thống chuyên khoa, cẩm nang và tư vấn viên, bệnh nhân hiểu rõ vấn đề của mình, gặp đúng bác sĩ chuyên khoa giỏi.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel faq-panel">
+                                <div class="faq-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#general-questions" href="#gf3" aria-expanded="false">
+                                            Đặt lịch 24/7 <i class="indicator glyphicon glyphicon-plus pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="gf3" role="tablist" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        Hệ thống hoạt động liên tục 24 giờ một ngày, 7 ngày/tuần, và 365 ngày/năm, kể cả ngày nghỉ và ngày lễ. Luôn sẵn sàng 24/7 để bệnh nhân đặt lịch trực tuyến.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service section ends -->
+        <!-- team section -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="team-heading text-center">
+                        <h2>Đội ngũ bác sĩ</h2>
+                        <p></p>
+                    </div>
+                    <div id="team-slide" class="owl-carousel">
+                        <!-- member 1 -->
+                        <div class="item">
+                            <div class="member-image">
+                                <img src=@Url.Content("/Content/images/team-member1.jpg") alt="medihere Team Member" title="John Smith">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                    <a class="btn btn-info" href="#">Xem thông tin</a>
+                                </div>
+                            </div>
+                            <h3>John Smith</h3>
+                            <h4>Cardiology</h4>
+                        </div>
+                        <!-- member 2 -->
+                        <div class="item">
+                            <div class="member-image">
+                                <img src=@Url.Content("/Content/images/team-member2.jpg") alt="medihere Team Member" title="Jubaida Banu">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                    <a class="btn btn-info" href="#">Xem thông tin</a>
+                                </div>
+                            </div>
+                            <h3>Jubaida Banu</h3>
+                            <h4>Orthopaedics</h4>
+                        </div>
+                        <!-- member 3 -->
+                        <div class="item">
+                            <div class="member-image">
+                                <img src=@Url.Content("/Content/images/team-member3.jpg") alt="medihere Team Member" title="M. A. Kulsum">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                    <a class="btn btn-info" href="#">Xem thông tin</a>
+                                </div>
+                            </div>
+                            <h3>M. A. Kulsum</h3>
+                            <h4>Dental Specialist</h4>
+                        </div>
+                        <!-- member 4 -->
+                        <div class="item">
+                            <div class="member-image">
+                                <img src=@Url.Content("/Content/images/team-member4.jpg") alt="medihere Team Member" title="D. P. Jorina">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                    <a class="btn btn-info" href="member-detail.html">View Profile</a>
+                                </div>
+                            </div>
+                            <h3>D. P. Jorina</h3>
+                            <h4>Neurology</h4>
+                        </div>
+                        <!-- member 5 -->
+                        <div class="item">
+                            <div class="member-image">
+                                <img src=@Url.Content("/Content/images/team-member5.jpg") alt="medihere Team Member" title="M. C. Jalil">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                    <a class="btn btn-info" href="member-detail.html">Xem thông tin</a>
+                                </div>
+                            </div>
+                            <h3>M. C. Jalil</h3>
+                            <h4>Haematology</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team section ends -->
+        <!-- about section -->
+        <section class="home-about text-center">
+            <div class="aboverlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="about-heading">
+                        <h2>Đánh giá của bệnh nhân về chúng tôi</h2>
+                        <span></span>
+                    </div>
+                    <div id="about-content" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src=@Url.Content("/Content/images/patient1.jpg") alt="The Last of us">
+                            <p></p>
+                            <h3>Luis PK <span>( CEO, Ghurar dim )</span></h3>
+                            <h4>VIP Patient</h4>
+                        </div>
+                        <div class="item">
+                            <img src=@Url.Content("/Content/images/patient2.jpg") alt="The Last of us">
+                            <p></p>
+                            <h3>Apod A, M <span>(President, T E O center )</span></h3>
+                            <h4>Regular patient</h4>
+                        </div>
+                        <div class="item">
+                            <img src=@Url.Content("/Content/images/patient3.jpg") alt="The Last of us">
+                            <p></p>
+                            <h3>Kate Bouche <span>( Accountant, J Y Association )</span></h3>
+                            <h4>Dental Patient</h4>
+                        </div>
+                        <div class="item">
+                            <img src=@Url.Content("/Content/images/patient4.jpg") alt="The Last of us">
+                            <p></p>
+                            <h3>Tomas D L <span>( MD, F P Magnatic )</span></h3>
+                            <h4>VIP Patient</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends -->
+        <!-- news section -->
+        <section class="latest-post" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="latest-news-heading col-md-12">
+                        <h2>Bài viết mới nhất</h2>
+                        <p></p>
+                        <a href="#" class="btn btn-info text-right">See All Posts <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="latest-posts-contents">
+                        <div class="col-md-4 col-sm-6 single-latest-post">
+                            <img src=@Url.Content("/Content/images/news1.jpg") alt="#" title="medihere Blog Post">
+                            <h3><a href="#">Bảo vệ sức khỏe cho trẻ</a></h3>
+                            <p> <a href="#">Xem thêm</a></p>
+                            <div class="post-meta">
+                                <span class="meta-time"><i class="fa fa-calendar"></i> 19 February 2016</span>
+                                <span class="meta-comment"><a href="#"><i class="fa fa-comment-o"></i> 3 Bình luận</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 single-latest-post">
+                            <img src=@Url.Content("/Content/images/news2.jpg") alt="#" title="medihere Blog Post">
+                            <h3><a href="#">Tăng cường sức khỏe</a></h3>
+                            <p><a href="#">Xem thêm</a></p>
+                            <div class="post-meta">
+                                <span class="meta-time"><i class="fa fa-calendar"></i> 17 February 2016</span>
+                                <span class="meta-comment"><a href="#"><i class="fa fa-comment-o"></i> 4 Bình Luận</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 single-latest-post">
+                            <img src=@Url.Content("/Content/images/news3.jpg") alt="#" title="medihere Blog Post">
+                            <h3><a href="#">Chăm sóc cơ thể định kỳ</a></h3>
+                            <p> <a href="#">Xem thêm</a></p>
+                            <div class="post-meta">
+                                <span class="meta-time"><i class="fa fa-calendar"></i> 14 February 2016</span>
+                                <span class="meta-comment"><a href="#"><i class="fa fa-comment-o"></i> 6 Bình luận</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest news section ends -->
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="newsletter-contents">
+                        <div class="col-md-6 clearfix">
+                            <form action="?">
+                                <input class="col-md-9 col-sm-9 col-xs-9" type="email" placeholder="Email">
+                                <input class="col-md-3 col-sm-3 col-xs-3" type="submit" value="Gửi">
+                            </form>
+                        </div>
+                        <div class="col-md-6 clearfix">
+                            <h3>Đăng ký nhận bản tin, cập nhật!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- newsletter ends -->
+        @Html.Partial("_Footer")
+    </main>
+    <!-- main page ends -->
+    <!-- Jquery and javascript files -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/jquery-2.1.1.js")></script>
+    <!-- date picker js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/datepicker.js")></script>
+    <!-- bootstrap 3.3.6 js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/bootstrap.min.js")></script>
+    <!-- owl carousel js-->
+    <script type="text/javascript" src=@Url.Content("/Content/js/owl.carousel.js")></script>
+    <!-- smooth scroll js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/smoothscroll.js")></script>
+    <!-- preloader js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/jquery.introLoader.pack.min.js")></script>
+    <!-- custom scripts -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/script.js")></script>
+    <div>@RenderBody()</div>
+</body>
+</html>

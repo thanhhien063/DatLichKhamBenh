@@ -1,0 +1,84 @@
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.csprojResolveAssemblyReference.cache
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\ApplicationInsights.config
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\csc.exe
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\System.Collections.Immutable.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\System.Reflection.Metadata.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\vbc.exe
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\VBCSCompiler.exe
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\roslyn\VBCSCompiler.exe.config
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.dll.config
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.pdb
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.SqlServer.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Agent.Intercept.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.DependencyCollector.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Web.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.WindowsServer.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.ApplicationInsights.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.Web.Infrastructure.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Helpers.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Mvc.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Razor.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Deployment.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Razor.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.SqlServer.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.DependencyCollector.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Web.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.WindowsServer.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.ApplicationInsights.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Razor.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Deployment.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Razor.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Helpers.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Mvc.xml
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.dll
+D:\LT.NET\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.pdb
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\ApplicationInsights.config
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.dll.config
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\DatLichKhamBenh.pdb
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.SqlServer.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Web.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Helpers.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Mvc.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Razor.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Razor.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\EntityFramework.SqlServer.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.Web.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Razor.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Razor.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Helpers.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Mvc.xml
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.csprojResolveAssemblyReference.cache
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.dll
+C:\Users\Loc's Gaming Laptop\Documents\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinalVersion1.2\DoAnCuoiKyDotNetFinal\DatLichKhamBenh\DatLichKhamBenh\obj\Release\DatLichKhamBenh.pdb

@@ -1,0 +1,155 @@
+﻿@model DatLichKhamBenh.Models.datlichhen
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@Page.Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Medical Template">
+    <meta name="keywords" content="Medical, medihere, Doctor, HTML5, Bootstrap, Popular, custom, clinic, health-care, template, theme" />
+    <meta name="author" content="Mostafiz">
+    <!-- Favicon -->
+    <link rel="icon" href=@Url.Content("/Content/images/favicon.ico")>
+    <title>Medihere - Responsive Bootstrap &amp; HTML Medical Template</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/font-awesome.min.css")>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/bootstrap.min.css")>
+    <!-- preloader css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/introLoader.min.css")>
+    <!-- animate css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/animate.css") type="text/css" />
+    <!-- owl carousel styles -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/owl.carousel.css") type="text/css" />
+    <!-- date picker css -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/datepicker.css")>
+    <!-- main style -->
+    <link rel="stylesheet" href=@Url.Content("/Content/css/style.css")>
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+    <!-- modernizr -->
+    <script src=@Url.Content("/Content/js/modernizr.js")></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <main id="wrapper">
+        <!-- // Preloader markup -->
+        <div id="element" class="introLoading"></div>
+        @Html.Partial("_Header")
+        <!-- Blog page banner -->
+        <section id="banner" class="banner text-center">
+            <div class="container">
+                <div class="row">
+                    <h1>Liên hệ với chúng tôi</h1>
+                    <p>Hãy đặt lịch khám online để giữ chổ cho bạn</p>
+                </div>
+            </div>
+        </section>
+        <!-- banner ends -->
+        <!-- appointment section -->
+
+        <section class="appointment text-center" id="appointment">
+            <div class="container abcontainer text-left">
+                <div class="page-nav">
+                    <span class="heading-nav"><a href="#">Trang chủ</a> | Giới Thiệu</span>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <h2>Đặt lịch khám bệnh</h2>
+                    <p></p>
+
+                    <div class="col-md-6">
+                        <img src=@Url.Content("/Content/images/appointment.jpg") alt="#" class="img-responsive" title="Appointment with our great Doctors">
+                    </div>
+                    <div class="col-md-6">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+
+                            <form action="appointment.php" method="post" class="form-horizontal">
+                                <!-- first name -->
+                        <div >
+                            <p style="color:cornflowerblue; font-size: 30px;" >Bạn đã đặt lịch thành công</p>
+                        </div>
+
+
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.TextBoxFor(model => model.hoVaTen, new { @class = "form-control", @placeholder = "Họ và tên", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.hoVaTen, "", new { @class = "text-danger" })
+
+                                    <!--<input name="first_name" type="text" placeholder="Họ" class="form-control" required>-->
+                                </div>
+
+                                <!-- email address -->
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", @placeholder = "Email", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                    <!--<input name="email" type="email" placeholder="Email" class="form-control" required>-->
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.TextBoxFor(model => model.sdt, new { @class = "form-control", @placeholder = "Số điện thoại", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.sdt, "", new { @class = "text-danger" })
+                                    <!--<input name="phone" type="text" placeholder="Số điện thoại" class="form-control">-->
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.TextBoxFor(model => model.ngayThangNamSinh, new { @class = "form-control", @placeholder = "Ngày/tháng/năm sinh", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.ngayThangNamSinh, "", new { @class = "text-danger" })
+                                    <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.DropDownListFor(model => model.gioiTinh, new SelectList(new List<Object> { new { value = 1, text = "Nam" }, new { value = 0, text = "Nữ" } }, "value", "text", 2), "Chọn giới tính")
+                                    @Html.ValidationMessageFor(model => model.gioiTinh, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    @Html.TextBoxFor(model => model.ngayHen, new { @class = "form-control", @placeholder = "Ngày hẹn", @id = "datepicker", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.ngayHen, "", new { @class = "text-danger" })
+                                    <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
+                                </div>
+                                <div class="col-md-12 clearfix">
+                                    @Html.TextBoxFor(model => model.noiDung, new { @class = "form-control", @placeholder = "Triệu chứng ban đầu (nêu ngắn gọn)", @autofocus = "autofocus" })
+                                    @Html.ValidationMessageFor(model => model.noiDung, "", new { @class = "text-danger" })
+                                    <!-- <textarea name="message" id="appointment-message" rows="8" placeholder="Nội dung" class="form-control"></textarea>-->
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" value="Đặt lịch" class="form-control">
+                                </div>
+                            </form>}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- appointment seciton ends -->
+        @Html.Partial("_Footer")
+    </main>
+    <!-- main page ends -->
+    <!-- Jquery and javascript files -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/jquery-2.1.1.js")></script>
+    <!-- date picker js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/datepicker.js")></script>
+    <!-- bootstrap 3.3.6 js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/bootstrap.min.js")></script>
+    <!-- owl carousel js-->
+    <script type="text/javascript" src=@Url.Content("/Content/js/owl.carousel.js")></script>
+    <!-- smooth scroll js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/smoothscroll.js")></script>
+    <!-- preloader js -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/jquery.introLoader.pack.min.js")></script>
+    <!-- custom scripts -->
+    <script type="text/javascript" src=@Url.Content("/Content/js/script.js")></script>
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

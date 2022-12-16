@@ -1,0 +1,10 @@
+﻿@using DatLichKhamBenh.Models;
+@model List<MENU>
+
+
+    @foreach (var itemcon in Model)
+    {
+        <a href="@Url.Action(itemcon.LINK, itemcon.NAMECONTROLLER )">@itemcon.NAME </a>
+
+    }
+

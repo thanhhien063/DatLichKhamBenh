@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebDatLichKhamBenhModel1StoreContainer" CdmEntityContainer="WebDatLichKhamBenhEntities1">
+    <EntitySetMapping Name="danhsachbacsis">
+      <EntityTypeMapping TypeName="WebDatLichKhamBenhModel1.danhsachbacsi">
+        <MappingFragment StoreEntitySet="danhsachbacsi">
+          <ScalarProperty Name="mabacsi" ColumnName="mabacsi" />
+          <ScalarProperty Name="hovaten" ColumnName="hovaten" />
+          <ScalarProperty Name="chucvu" ColumnName="chucvu" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
