@@ -1,6 +1,5 @@
-﻿
+﻿@model DatLichKhamBenh.Models.LienHeViewModel
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>@Page.Title</title>
@@ -82,14 +81,36 @@
                         </div>*@
                     </div>
                     <div class="col-md-6">
-                        <form action="email.php" method="post">
+                        @*<form>
                             <input name="ten" type="text" placeholder="Tên" required>
                             <input name="sđt" type="text" placeholder="Số điện thoại">
                             <input name="email" type="email" placeholder="Email" required>
                             <input name="tieude" type="text" placeholder="Tiêu đề">
                             <textarea name="noidung" rows="7" placeholder="Nội dung" required></textarea>
                             <input type="submit" value="Gửi">
-                        </form>
+                        </form>*@
+                        <div class="panel-body">
+                            @using (Html.BeginForm("SendMailLienHe", "LienHe", FormMethod.Post))
+                            {
+                                //@Html.AntiForgeryToken()
+                                //@Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+                                <form role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            @Html.TextBoxFor(model => model.HoTen, new { @class = "form-control", @placeholder = "Họ tên", @autofocus = "autofocus" })
+                                            <!--<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>-->
+                                        </div>
+                                        <div class="form-group ">
+                                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
+                                            <!--<input class="form-control" placeholder="Password" name="password" type="password" value="">-->
+                                        </div>
+                                        <!-- Change this to a button or input when using this as a form -->
+                                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Gửi" />
+                                        <!--<a href="~/Areas/Admin/Views/TrangChuAdmin/IndexAdmin.cshtml" class="btn btn-lg btn-success btn-block">Login</a>-->
+                                    </fieldset>
+                                </form>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

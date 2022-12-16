@@ -28,5 +28,6 @@ namespace DatLichKhamBenh.Models
         public string IDTAIKHOAN { get; set; }
         public string IDCHUCVU { get; set; }
         public string LoginErrorMessage { get; internal set; }
+        public string LoginSuccessMessage { get; internal set; }
     }
 }

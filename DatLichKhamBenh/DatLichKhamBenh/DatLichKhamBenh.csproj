@@ -278,6 +278,7 @@
     <Compile Include="Models\datlichhen.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LienHeViewModel.cs" />
     <Compile Include="Models\MENU.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
