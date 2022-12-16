@@ -14,7 +14,7 @@ namespace DatLichKhamBenh.Controllers
         {
             return View();
         }
-        public ActionResult Autherize(TAIKHOAN taiKhoan)
+        public ActionResult AutherizePatient(TAIKHOAN taiKhoan)
         {
             using (WebDatLichKhamBenhEntities db = new WebDatLichKhamBenhEntities())
             {
