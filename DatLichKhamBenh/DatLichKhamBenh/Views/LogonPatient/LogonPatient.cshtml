@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>@Page.Title</title>
-    @RenderSection("head", required: false)
+    @*@RenderSection("head", required: false)*@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Medical Template">
@@ -42,7 +42,7 @@
     <main id="wrapper">
         <!-- // Preloader markup -->
         <div id="element" class="introLoading"></div>
-        @Html.Partial("_Header")
+        @Html.Partial("_LogonHeader")
         <!--  slider section-->
         <section class="slider" id="slider">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -50,7 +50,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src=@Url.Content("/Content/images/122413-bookingcarecover2021.png") alt="#"/>
+                        <img src=@Url.Content("/Content/images/122413-bookingcarecover2021.png") alt="#" />
                         <div class="carousel-caption text-right">
                             <h1 class="animated rotateInUpRight">Chào bạn đến với trung tâm HealthCareVN</h1>
                             <p class="animated bounceInDown"></p>
@@ -130,7 +130,7 @@
                                         <span></span>
                                         <h3>Tai mũi họng</h3>
                                         <p>
-                                           Do các bác sĩ chuyên khoa tai mũi họng trực tếp khám bệnh
+                                            Do các bác sĩ chuyên khoa tai mũi họng trực tếp khám bệnh
                                         </p>
                                     </div>
                                 </div>
@@ -214,6 +214,57 @@
                 </div>
             </div>
         </section>
+        <section class="about" id="about">
+            <div class="container abcontainer">
+                @*<div class="page-nav">
+                    <span class="heading-nav"><a href="/TrangChu">Trang chủ</a> | Giới Thiệu</span>
+                </div>*@
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h2>Giới thiệu</h2>
+                        <br />
+                        <br />
+                        <p style="text-align:justify">Hệ thống đặt lịch khám trực tuyến HealthCareVN hoạt động liên tục 24 giờ/ngày để người dùng thuận tiện đặt lịch khám trực tuyến bất cứ lúc nào, ở đâu.</p>
+                        <br />
+                        <p style="text-align:justify"> Chúng tôi hiểu rằng, người bệnh xứng đáng được lựa chọn dịch vụ y tế chất lượng cao, như là:</p>
+                        <br />
+                        <ul>
+                            <li style="text-align: justify;">* Bác sĩ chuyên khoa giỏi </li>
+                            <li style="text-align: justify;">* Thông tin bác sĩ rõ ràng từ chuyên khoa, kinh nghiệm, quá trình đào tạo</li>
+                            <li style="text-align: justify;">* Cơ sở y tế tiện nghi</li>
+                            <li style="text-align: justify;">* Giá cả dịch vụ hợp lý, công khai minh bạch</li>
+                            <li style="text-align: justify;">* Trang thiết bị y tế hiện đại, hỗ trợ chẩn đoán chính xác</li>
+                            <li style="text-align: justify;">* Giảm thiểu thời gian chờ đợi, xếp hàng</li>
+                            <li style="text-align: justify;">* Đặt lịch khám đơn giản, bất kỳ lúc nào, ở đâu.</li>
+                        </ul>
+                        <br />
+                        <p style="text-align:justify">Đội ngũ chúng tôi luôn nỗ lực hết mình, với mong muốn bệnh nhân yên tâm lựa chọn bác sĩ chuyên khoa giỏi cho vấn đề sức khỏe của mình. Để việc đặt lịch khám và đi khám của bệnh nhân trở nên đơn giản, thuận tiện nhất có thể.</p>
+                        <br />
+                        <p style="text-align:justify">Vì vậy, hệ thống đặt lịch khám trực tuyến HealthCareVN được xây dựng dựa trên những nguyên tắc cơ bản sau đây: </p>
+                        <br />
+                        <p style="text-align:justify"><span style="color: blue"> 1. Bác sĩ chuyên khoa giỏi</span></p>
+                        <p style="text-align:justify"><span style="color: blue"> 2. Kết nối “Đúng bệnh nhân, đúng bác sĩ”</span></p>
+                        <p style="text-align:justify"><span style="color: blue"> 3. Hỗ trợ chu đáo</span></p>
+                        <p style="text-align:justify"><span style="color: blue"> 4. Đặt lịch khám 24/7 thân thiện, tiện ích</span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src=@Url.Content("/Content/images/GioiThieu.jpeg") alt="#" class="img-responsive" title="About us image">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- about section ends -->
+
+        <div class="hospital text-center">
+            <div class="container">
+                <div class="row">
+                    <h2>Kiến trúc trung tâm</h2>
+                    <p>Kiến trúc tòa nhà hiện đại, không gian thoải mái cho bệnh nhân</p>
+                    <img src=@Url.Content("/Content/images/hospital.jpg") alt="#" class="img-responsive" title="Medihere Hospital">
+                </div>
+            </div>
+        </div>
         <!-- service section ends -->
         <!-- team section -->
         @*<section class="team" id="team">
@@ -426,6 +477,7 @@
     <script type="text/javascript" src=@Url.Content("/Content/js/jquery.introLoader.pack.min.js")></script>
     <!-- custom scripts -->
     <script type="text/javascript" src=@Url.Content("/Content/js/script.js")></script>
-    <div>@RenderBody()</div>
+    @*<div>@RenderBody()</div>*@
 </body>
 </html>
+

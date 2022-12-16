@@ -17,12 +17,16 @@ namespace DatLichKhamBenh.Areas.Admin.Controllers
         {
             using (WebDatLichKhamBenhEntities db = new WebDatLichKhamBenhEntities())
             {
-                var userDetails = db.TAIKHOANs.Where(x => x.EMAIL == taiKhoan.EMAIL && x.MATKHAU == taiKhoan.MATKHAU).FirstOrDefault();
+                var userDetails = db.TAIKHOANs.Where(x => x.EMAIL == taiKhoan.EMAIL && x.MATKHAU == taiKhoan.MATKHAU && x.IDCHUCVU != "BN").FirstOrDefault();
                 if (userDetails == null)
                 {
-                    taiKhoan.LoginErrorMessage = "Email hoặc mật khẩu không đúng";
+                    taiKhoan.LoginErrorMessage = "Email hoặc mật khẩu không đúng. Tài khoản không phải tài khoản Quản trị";
                     return View("Login", taiKhoan);
                 }
+                //if (userDetails = db.TAIKHOANs.Where(x => x.IDCHUCVU != "BN"))
+                //{
+
+                //}
                 else
                 {
                     Session["EMAIL"] = taiKhoan.EMAIL;

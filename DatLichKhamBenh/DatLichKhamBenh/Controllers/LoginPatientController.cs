@@ -31,7 +31,7 @@ namespace DatLichKhamBenh.Controllers
                     Session["MATKHAU"] = taiKhoan.MATKHAU;
                     taiKhoan.LoginErrorMessage = "Đăng nhập thành công";
                     Task.WaitAll(Task.Delay(3000));
-                    return RedirectToAction("Index", "TrangChu");
+                    return RedirectToAction("LogonPatient", "LogonPatient");
                 }
             }
         }
