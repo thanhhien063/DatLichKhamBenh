@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WebDatLichKhamBenhModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="WebDatLichKhamBenhModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CHUCVU">
           <Key>
             <PropertyRef Name="ID" />
@@ -36,6 +36,7 @@
           <Property Name="ngayHen" Type="nvarchar" MaxLength="50" />
           <Property Name="noiDung" Type="nvarchar" MaxLength="50" />
           <Property Name="trangThai" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdTaiKhoan" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="MENU">
           <Key>
@@ -61,14 +62,14 @@
             <PropertyRef Name="IDTAIKHOAN" />
           </Key>
           <Property Name="HOTEN" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="NGAYSINH" Type="datetime" />
+          <Property Name="NGAYSINH" Type="datetime" Nullable="false" />
           <Property Name="GIOITINH" Type="nvarchar" MaxLength="3" Nullable="false" />
           <Property Name="SODT" Type="varchar" MaxLength="11" Nullable="false" />
           <Property Name="DIACHI" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="EMAIL" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="MATKHAU" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="IDTAIKHOAN" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="IDCHUCVU" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDCHUCVU" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityContainer Name="WebDatLichKhamBenhModel2StoreContainer">
           <EntitySet Name="CHUCVU" EntityType="Self.CHUCVU" Schema="dbo" store:Type="Tables" />
@@ -78,8 +79,7 @@
           <EntitySet Name="PHANQUYEN" EntityType="Self.PHANQUYEN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WebDatLichKhamBenhModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -100,20 +100,6 @@
           <Property Name="sdt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="cmnd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="datlichhen">
-          <Key>
-            <PropertyRef Name="maKhamBenh" />
-          </Key>
-          <Property Name="maKhamBenh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="hoVaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="sdt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ngayThangNamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="gioiTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ngayHen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="noiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="trangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="MENU">
           <Key>
@@ -139,23 +125,38 @@
             <PropertyRef Name="IDTAIKHOAN" />
           </Key>
           <Property Name="HOTEN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NGAYSINH" Type="DateTime" Precision="3" />
+          <Property Name="NGAYSINH" Type="DateTime" Precision="3" Nullable="false" />
           <Property Name="GIOITINH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SODT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MATKHAU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="IDTAIKHOAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="IDCHUCVU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IDCHUCVU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="WebDatLichKhamBenhEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CHUCVUs" EntityType="Self.CHUCVU" />
           <EntitySet Name="danhsachbacsis" EntityType="Self.danhsachbacsi" />
-          <EntitySet Name="datlichhens" EntityType="Self.datlichhen" />
           <EntitySet Name="MENUs" EntityType="Self.MENU" />
           <EntitySet Name="PHANQUYENs" EntityType="Self.PHANQUYEN" />
           <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+          <EntitySet Name="datlichhens" EntityType="WebDatLichKhamBenhModel2.datlichhen" />
         </EntityContainer>
+        <EntityType Name="datlichhen">
+          <Key>
+            <PropertyRef Name="maKhamBenh" />
+          </Key>
+          <Property Name="maKhamBenh" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hoVaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sdt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ngayThangNamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gioiTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ngayHen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="noiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="trangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdTaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -179,21 +180,6 @@
                 <ScalarProperty Name="sdt" ColumnName="sdt" />
                 <ScalarProperty Name="diachi" ColumnName="diachi" />
                 <ScalarProperty Name="cmnd" ColumnName="cmnd" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="datlichhens">
-            <EntityTypeMapping TypeName="WebDatLichKhamBenhModel2.datlichhen">
-              <MappingFragment StoreEntitySet="datlichhen">
-                <ScalarProperty Name="maKhamBenh" ColumnName="maKhamBenh" />
-                <ScalarProperty Name="hoVaTen" ColumnName="hoVaTen" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="sdt" ColumnName="sdt" />
-                <ScalarProperty Name="ngayThangNamSinh" ColumnName="ngayThangNamSinh" />
-                <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
-                <ScalarProperty Name="ngayHen" ColumnName="ngayHen" />
-                <ScalarProperty Name="noiDung" ColumnName="noiDung" />
-                <ScalarProperty Name="trangThai" ColumnName="trangThai" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -229,6 +215,22 @@
                 <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
                 <ScalarProperty Name="IDTAIKHOAN" ColumnName="IDTAIKHOAN" />
                 <ScalarProperty Name="IDCHUCVU" ColumnName="IDCHUCVU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="datlichhens">
+            <EntityTypeMapping TypeName="WebDatLichKhamBenhModel2.datlichhen">
+              <MappingFragment StoreEntitySet="datlichhen">
+                <ScalarProperty Name="IdTaiKhoan" ColumnName="IdTaiKhoan" />
+                <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+                <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+                <ScalarProperty Name="ngayHen" ColumnName="ngayHen" />
+                <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+                <ScalarProperty Name="ngayThangNamSinh" ColumnName="ngayThangNamSinh" />
+                <ScalarProperty Name="sdt" ColumnName="sdt" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="hoVaTen" ColumnName="hoVaTen" />
+                <ScalarProperty Name="maKhamBenh" ColumnName="maKhamBenh" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

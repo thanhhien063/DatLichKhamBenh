@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using DatLichKhamBenh.Models;
 using System.Threading.Tasks;
+using System.Web.Routing;
+using DatLichKhamBenh.Models;
 
 namespace DatLichKhamBenh.Controllers
 {
@@ -29,9 +30,13 @@ namespace DatLichKhamBenh.Controllers
                 {
                     Session["EMAIL"] = taiKhoan.EMAIL;
                     Session["MATKHAU"] = taiKhoan.MATKHAU;
+                    LoginViewModel loginView = new LoginViewModel();
+                    loginView.IdTaiKhoan = userDetails.IDTAIKHOAN;
+                    Code.Utilities.IdTaiKhoanSessionValue = userDetails.IDTAIKHOAN;
+
                     taiKhoan.LoginErrorMessage = "Đăng nhập thành công";
                     Task.WaitAll(Task.Delay(3000));
-                    return RedirectToAction("LogonPatient", "LogonPatient");
+                    return RedirectToAction("LogonPatient", "LogonPatient", loginView);
                 }
             }
         }

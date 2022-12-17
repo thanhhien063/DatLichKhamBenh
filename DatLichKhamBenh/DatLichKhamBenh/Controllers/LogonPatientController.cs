@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatLichKhamBenh.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,15 @@ namespace DatLichKhamBenh.Controllers
     public class LogonPatientController : Controller
     {
         // GET: LogonPatient
-        public ActionResult LogonPatient()
+        public ActionResult LogonPatient(LoginViewModel model)
         {
-            return View();
+            ViewData["IdTaiKhoan"] = model.IdTaiKhoan;
+            return View(model);
+        }
+        public PartialViewResult _LogonHeader(LoginViewModel model)
+        {
+            ViewData["IdTaiKhoan"] = model.IdTaiKhoan;
+            return PartialView(model);
         }
     }
 }

@@ -77,52 +77,50 @@
                             @Html.AntiForgeryToken()
                             @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
 
-                            <form action="appointment.php" method="post" class="form-horizontal">
-                                <!-- first name -->
+                        <form action="appointment.php" method="post" class="form-horizontal">
+                            @Html.Hidden("IdTaiKhoan", ViewData["IdTaiKhoan"])
+                            <!-- first name -->
+                            <div class="col-md-6 col-sm-6">
+                                @Html.TextBoxFor(model => model.hoVaTen, new { @class = "form-control", @placeholder = "Họ và tên", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.hoVaTen, "", new { @class = "text-danger" })
 
+                                <!--<input name="first_name" type="text" placeholder="Họ" class="form-control" required>-->
+                            </div>
 
-
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.TextBoxFor(model => model.hoVaTen, new { @class = "form-control", @placeholder = "Họ và tên", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.hoVaTen, "", new { @class = "text-danger" })
-
-                                    <!--<input name="first_name" type="text" placeholder="Họ" class="form-control" required>-->
-                                </div>
-
-                                <!-- email address -->
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", @placeholder = "Email", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
-                                    <!--<input name="email" type="email" placeholder="Email" class="form-control" required>-->
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.TextBoxFor(model => model.sdt, new { @class = "form-control", @placeholder = "Số điện thoại", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.sdt, "", new { @class = "text-danger" })
-                                    <!--<input name="phone" type="text" placeholder="Số điện thoại" class="form-control">-->
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.TextBoxFor(model => model.ngayThangNamSinh, new { @class = "form-control", @placeholder = "Ngày/tháng/năm sinh", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.ngayThangNamSinh, "", new { @class = "text-danger" })
-                                    <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.DropDownListFor(model => model.gioiTinh, new SelectList(new List<Object> { new { value = 1, text = "Nam" }, new { value = 0, text = "Nữ" } }, "value", "text", 2), "Chọn giới tính")
-                                    @Html.ValidationMessageFor(model => model.gioiTinh, "", new { @class = "text-danger" })
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    @Html.TextBoxFor(model => model.ngayHen, new { @class = "form-control", @placeholder = "Ngày hẹn", @id = "datepicker", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.ngayHen, "", new { @class = "text-danger" })
-                                    <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
-                                </div>
-                                <div class="col-md-12 clearfix">
-                                    @Html.TextBoxFor(model => model.noiDung, new { @class = "form-control", @placeholder = "Triệu chứng ban đầu (nêu ngắn gọn)", @autofocus = "autofocus" })
-                                    @Html.ValidationMessageFor(model => model.noiDung, "", new { @class = "text-danger" })
-                                    <!-- <textarea name="message" id="appointment-message" rows="8" placeholder="Nội dung" class="form-control"></textarea>-->
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" value="Đặt lịch" class="form-control">
-                                </div>
-                            </form>}
+                            <!-- email address -->
+                            <div class="col-md-6 col-sm-6">
+                                @Html.TextBoxFor(model => model.email, new { @class = "form-control", @placeholder = "Email", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                <!--<input name="email" type="email" placeholder="Email" class="form-control" required>-->
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                @Html.TextBoxFor(model => model.sdt, new { @class = "form-control", @placeholder = "Số điện thoại", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.sdt, "", new { @class = "text-danger" })
+                                <!--<input name="phone" type="text" placeholder="Số điện thoại" class="form-control">-->
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                @Html.TextBoxFor(model => model.ngayThangNamSinh, new { @class = "form-control", @placeholder = "Ngày/tháng/năm sinh", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.ngayThangNamSinh, "", new { @class = "text-danger" })
+                                <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                @Html.DropDownListFor(model => model.gioiTinh, new SelectList(new List<Object> { new { value = 1, text = "Nam" }, new { value = 0, text = "Nữ" } }, "value", "text", 2), "Chọn giới tính")
+                                @Html.ValidationMessageFor(model => model.gioiTinh, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                @Html.TextBoxFor(model => model.ngayHen, new { @class = "form-control", @placeholder = "Ngày hẹn", @id = "datepicker", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.ngayHen, "", new { @class = "text-danger" })
+                                <!--<input name="date" type="text" id="datepicker" placeholder="ngày/tháng/năm sinh" class="form-control" required>-->
+                            </div>
+                            <div class="col-md-12 clearfix">
+                                @Html.TextBoxFor(model => model.noiDung, new { @class = "form-control", @placeholder = "Triệu chứng ban đầu (nêu ngắn gọn)", @autofocus = "autofocus" })
+                                @Html.ValidationMessageFor(model => model.noiDung, "", new { @class = "text-danger" })
+                                <!-- <textarea name="message" id="appointment-message" rows="8" placeholder="Nội dung" class="form-control"></textarea>-->
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" value="Đặt lịch" class="form-control">
+                            </div>
+                        </form>}
                     </div>
                 </div>
             </div>

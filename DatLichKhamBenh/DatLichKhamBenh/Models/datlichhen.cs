@@ -23,5 +23,6 @@ namespace DatLichKhamBenh.Models
         public string ngayHen { get; set; }
         public string noiDung { get; set; }
         public string trangThai { get; set; }
+        public string IdTaiKhoan { get; set; }
     }
 }

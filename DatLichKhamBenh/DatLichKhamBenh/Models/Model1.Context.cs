@@ -27,9 +27,9 @@ namespace DatLichKhamBenh.Models
     
         public virtual DbSet<CHUCVU> CHUCVUs { get; set; }
         public virtual DbSet<danhsachbacsi> danhsachbacsis { get; set; }
-        public virtual DbSet<datlichhen> datlichhens { get; set; }
         public virtual DbSet<MENU> MENUs { get; set; }
         public virtual DbSet<PHANQUYEN> PHANQUYENs { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
+        public virtual DbSet<datlichhen> datlichhens { get; set; }
     }
 }

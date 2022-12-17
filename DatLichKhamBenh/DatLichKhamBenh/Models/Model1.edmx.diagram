@@ -7,10 +7,10 @@
       <Diagram DiagramId="c28088f9aa2a47cea5bcaeabffebbda6" Name="Diagram1">
         <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.CHUCVU" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.danhsachbacsi" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.datlichhen" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.MENU" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.PHANQUYEN" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.TAIKHOAN" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDatLichKhamBenhModel2.datlichhen" Width="1.5" PointX="0.625" PointY="4" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
