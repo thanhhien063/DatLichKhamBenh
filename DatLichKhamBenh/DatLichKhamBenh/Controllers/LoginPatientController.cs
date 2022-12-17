@@ -36,6 +36,7 @@ namespace DatLichKhamBenh.Controllers
 
                     taiKhoan.LoginErrorMessage = "Đăng nhập thành công";
                     Task.WaitAll(Task.Delay(3000));
+
                     return RedirectToAction("LogonPatient", "LogonPatient", loginView);
                 }
             }
