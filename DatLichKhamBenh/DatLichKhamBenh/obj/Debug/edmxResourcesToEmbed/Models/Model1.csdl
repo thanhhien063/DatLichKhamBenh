@@ -18,20 +18,6 @@
     <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="cmnd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityType Name="datlichhen">
-    <Key>
-      <PropertyRef Name="maKhamBenh" />
-    </Key>
-    <Property Name="maKhamBenh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="hoVaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="sdt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ngayThangNamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="gioiTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ngayHen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="noiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="trangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="MENU">
     <Key>
       <PropertyRef Name="ID" />
@@ -56,21 +42,36 @@
       <PropertyRef Name="IDTAIKHOAN" />
     </Key>
     <Property Name="HOTEN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="NGAYSINH" Type="DateTime" Precision="3" />
+    <Property Name="NGAYSINH" Type="DateTime" Precision="3" Nullable="false" />
     <Property Name="GIOITINH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SODT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DIACHI" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="MATKHAU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="IDTAIKHOAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IDCHUCVU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDCHUCVU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
   <EntityContainer Name="WebDatLichKhamBenhEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CHUCVUs" EntityType="Self.CHUCVU" />
     <EntitySet Name="danhsachbacsis" EntityType="Self.danhsachbacsi" />
-    <EntitySet Name="datlichhens" EntityType="Self.datlichhen" />
     <EntitySet Name="MENUs" EntityType="Self.MENU" />
     <EntitySet Name="PHANQUYENs" EntityType="Self.PHANQUYEN" />
     <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+    <EntitySet Name="datlichhens" EntityType="WebDatLichKhamBenhModel2.datlichhen" />
   </EntityContainer>
+  <EntityType Name="datlichhen">
+    <Key>
+      <PropertyRef Name="maKhamBenh" />
+    </Key>
+    <Property Name="maKhamBenh" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hoVaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sdt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngayThangNamSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gioiTinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngayHen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="noiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="trangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdTaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

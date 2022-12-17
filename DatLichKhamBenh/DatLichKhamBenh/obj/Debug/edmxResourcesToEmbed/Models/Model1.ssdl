@@ -31,6 +31,7 @@
     <Property Name="ngayHen" Type="nvarchar" MaxLength="50" />
     <Property Name="noiDung" Type="nvarchar" MaxLength="50" />
     <Property Name="trangThai" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdTaiKhoan" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="MENU">
     <Key>
@@ -56,14 +57,14 @@
       <PropertyRef Name="IDTAIKHOAN" />
     </Key>
     <Property Name="HOTEN" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="NGAYSINH" Type="datetime" />
+    <Property Name="NGAYSINH" Type="datetime" Nullable="false" />
     <Property Name="GIOITINH" Type="nvarchar" MaxLength="3" Nullable="false" />
     <Property Name="SODT" Type="varchar" MaxLength="11" Nullable="false" />
     <Property Name="DIACHI" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="EMAIL" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="MATKHAU" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="IDTAIKHOAN" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="IDCHUCVU" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCHUCVU" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityContainer Name="WebDatLichKhamBenhModel2StoreContainer">
     <EntitySet Name="CHUCVU" EntityType="Self.CHUCVU" Schema="dbo" store:Type="Tables" />

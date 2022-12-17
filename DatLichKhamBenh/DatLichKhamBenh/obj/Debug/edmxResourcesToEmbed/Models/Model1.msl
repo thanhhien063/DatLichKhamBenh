@@ -21,21 +21,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="datlichhens">
-      <EntityTypeMapping TypeName="WebDatLichKhamBenhModel2.datlichhen">
-        <MappingFragment StoreEntitySet="datlichhen">
-          <ScalarProperty Name="maKhamBenh" ColumnName="maKhamBenh" />
-          <ScalarProperty Name="hoVaTen" ColumnName="hoVaTen" />
-          <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="sdt" ColumnName="sdt" />
-          <ScalarProperty Name="ngayThangNamSinh" ColumnName="ngayThangNamSinh" />
-          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
-          <ScalarProperty Name="ngayHen" ColumnName="ngayHen" />
-          <ScalarProperty Name="noiDung" ColumnName="noiDung" />
-          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="MENUs">
       <EntityTypeMapping TypeName="WebDatLichKhamBenhModel2.MENU">
         <MappingFragment StoreEntitySet="MENU">
@@ -68,6 +53,22 @@
           <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
           <ScalarProperty Name="IDTAIKHOAN" ColumnName="IDTAIKHOAN" />
           <ScalarProperty Name="IDCHUCVU" ColumnName="IDCHUCVU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="datlichhens">
+      <EntityTypeMapping TypeName="WebDatLichKhamBenhModel2.datlichhen">
+        <MappingFragment StoreEntitySet="datlichhen">
+          <ScalarProperty Name="IdTaiKhoan" ColumnName="IdTaiKhoan" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+          <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+          <ScalarProperty Name="ngayHen" ColumnName="ngayHen" />
+          <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
+          <ScalarProperty Name="ngayThangNamSinh" ColumnName="ngayThangNamSinh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="hoVaTen" ColumnName="hoVaTen" />
+          <ScalarProperty Name="maKhamBenh" ColumnName="maKhamBenh" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
