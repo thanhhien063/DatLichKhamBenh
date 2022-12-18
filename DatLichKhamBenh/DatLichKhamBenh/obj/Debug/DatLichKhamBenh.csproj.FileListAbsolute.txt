@@ -343,6 +343,5 @@ C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\Da
 C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Webpages.Razor.xml
 C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Helpers.xml
 C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\bin\System.Web.Mvc.xml
-C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\obj\Debug\DatLichKhamBenh.csprojResolveAssemblyReference.cache
 C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\obj\Debug\DatLichKhamBenh.dll
 C:\Users\Loc's Gaming Laptop\Documents\GitHub\DatLichKhamBenh\DatLichKhamBenh\DatLichKhamBenh\obj\Debug\DatLichKhamBenh.pdb

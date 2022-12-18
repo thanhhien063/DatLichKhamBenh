@@ -355,6 +355,7 @@
     <Content Include="Views\Shared\_LogonHeader.cshtml" />
     <Content Include="Views\LichSuDatLich\LichSuDatLich.cshtml" />
     <Content Include="Views\LogonPatient\_LogonHeader.cshtml" />
+    <Content Include="Views\LichSuDatLich\XoaLichSuDatLich.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

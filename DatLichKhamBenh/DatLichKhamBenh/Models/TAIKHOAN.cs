@@ -15,7 +15,7 @@ namespace DatLichKhamBenh.Models
     public partial class TAIKHOAN
     {
         public string HOTEN { get; set; }
-        public System.DateTime NGAYSINH { get; set; }
+        public System.DateTime? NGAYSINH { get; set; }
         public string GIOITINH { get; set; }
         public string SODT { get; set; }
         public string DIACHI { get; set; }

@@ -21,7 +21,7 @@ namespace DatLichKhamBenh.Controllers
         // GET: DatLichKham
         public ActionResult DatLichKham(string IdTaiKhoan)
         {
-            var IdTaiKhoanSession = Code.Utilities.IdTaiKhoanSessionValue;
+            var IdTaiKhoanSession = Code.Utilities.IdTaiKhoanSessionLogonValue;
             if (IdTaiKhoan == null)
             {
                 IdTaiKhoan = IdTaiKhoanSession;

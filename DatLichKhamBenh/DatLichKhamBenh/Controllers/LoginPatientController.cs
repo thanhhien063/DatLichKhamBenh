@@ -32,7 +32,7 @@ namespace DatLichKhamBenh.Controllers
                     Session["MATKHAU"] = taiKhoan.MATKHAU;
                     LoginViewModel loginView = new LoginViewModel();
                     loginView.IdTaiKhoan = userDetails.IDTAIKHOAN;
-                    Code.Utilities.IdTaiKhoanSessionValue = userDetails.IDTAIKHOAN;
+                    Code.Utilities.IdTaiKhoanSessionLogonValue = userDetails.IDTAIKHOAN;
 
                     taiKhoan.LoginErrorMessage = "Đăng nhập thành công";
                     Task.WaitAll(Task.Delay(3000));

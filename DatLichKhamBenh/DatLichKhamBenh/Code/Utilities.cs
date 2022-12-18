@@ -7,7 +7,7 @@ namespace DatLichKhamBenh.Code
 {
     public class Utilities
     {
-        public static string IdTaiKhoanSessionValue
+        public static string IdTaiKhoanSessionLogonValue
         {
             get
             {

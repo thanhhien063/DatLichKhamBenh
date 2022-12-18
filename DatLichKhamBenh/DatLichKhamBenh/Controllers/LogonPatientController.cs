@@ -12,6 +12,11 @@ namespace DatLichKhamBenh.Controllers
         // GET: LogonPatient
         public ActionResult LogonPatient(LoginViewModel model)
         {
+            var IdTaiKhoanSessionLogon = Code.Utilities.IdTaiKhoanSessionLogonValue;
+            if (IdTaiKhoanSessionLogon == null)
+            {
+                return RedirectToAction("LoginPatient", "LoginPatient");
+            }
             ViewData["IdTaiKhoan"] = model.IdTaiKhoan;
             return View(model);
         }
